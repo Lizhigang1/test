@@ -1,0 +1,125 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="李伟, 材料化学与物理, 华中科大学, 物理学院, 武汉光电国家实验室">
+        <meta name="description" content="李伟课题组网站, 武汉光电国家实验室材料与化学课题组">
+        <title> MCP Group </title>
+        <link href="css/reset.css" rel="stylesheet" type="text/css" />
+        <link href="css/index.css" rel="stylesheet" type="text/css" />
+        <link href="css/shouye.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" href="images/mcplogo.ico" type="image/x-icon" />
+		    <link rel="shortcut icon" href="images/mcplogo.ico" type="image/x-icon"/>
+        <script type="text/javascript" src="js/jquery.min.js"></script> 
+        <script type="text/javascript" src="js/lightbox.js"></script>   
+        <script type="text/javascript" src="js/sl.js"></script>
+        <script type="text/javascript" src="js/baiduSDK.js"></script>
+        <script>
+          $(document).ready(function(){
+              $.focus("#focus-1");
+          });
+        </script>
+
+    </head>
+<body>
+  <!-- header嵌入代码 -->
+  <?php 
+      include "hide/header.php"
+  ?> 
+
+  <div id="wrapper"> <!-- 主体部分 -->
+    
+
+    <!-- 左侧导航栏开始 -->
+    <div id="sidebar">
+      <?php 
+          include "hide/navigation-bar-main.php"
+      ?> 
+      <!-- 副导航栏开始 --> 
+      <table id="sidetable2" frame="above" bordercolor="#00FF00">
+          <tr><td> 
+            <div id="nav2">
+             <ul id="internal2">
+                    <li><a class="tt-link" href="#daoshi"> 导师信息</a></li>
+                    <li><a class="tt-link" href="#geren">  个人简介</a></li>
+
+                </ul>
+            </div>
+          </td></tr>
+      </table>
+    </div>
+    <!-- 导航栏结束 -->
+
+    <div class="location"> <!-- 顶部栏目 -->
+      <!-- 招生宣传 -->
+      <?php
+          include "hide/zhaosheng.php"
+        ?>
+      <span class="wz">
+        您现在的位置：<a href="">首页</a>
+      </span>
+      <span class="total">
+        <?php
+          include("/new/php/counter.php");
+        ?>
+      </span>
+
+      <!-- 浏览记录代码 -->
+      <span class="jilu">
+         <script type="text/javascript" src="js/jilu.js" ></script>
+      </span>
+      <!-- 通知与更新时间嵌入代码 -->
+      <?php 
+          include "hide/notices.php"
+      ?>
+    </div> <!-- 顶部结束 -->
+
+    <!-- 正文部分开始 -->       
+    <div class="content">
+    <article>
+      <div class="news-sy"> <!-- 新闻部分开始 -->
+                新闻动图测试
+		    <div class="focus" id="focus-1">
+          <ul>
+            <li><a href="dynamic.php"><img src="images/news/1.jpg" title="测试新闻1" /><br/> <span>title1 图片 1 描述</span> </a></li>
+            <li><a href="dynamic.php"><img src="images/news/2.jpg" title="测试新闻2" /><br/> <span>title2 图片 2 描述</span> </a></li>
+            <li><a href="dynamic.php"><img src="images/news/3.jpg" title="测试新闻3" /><br/> <span>title3 图片 3 描述</span> </a></li>
+            <li><a href="dynamic.php"><img src="images/news/4.jpg" title="测试新闻4" /><br/> <span>title4 图片 4 描述</span> </a></li>
+            <li><a href="dynamic.php"><img src="images/news/5.jpg" title="测试新闻5" /><br/> <span>title5 图片 5 描述</span> </a></li>
+            <li><a href="dynamic.php"><img src="images/news/6.jpg" title="测试新闻6" /><br/> <span>title6 图片 6 描述</span> </a></li>
+          </ul>
+        </div>
+      </div> <!-- 新闻部分结束 -->
+         <br/>
+
+        <!-- 正文后续部分 -->
+        <div style="float: left; width: 300px;"> 
+        <strong id="daoshi">&nbsp;导师信息</strong><br>
+            <img id="lw-imgcss" title="李伟老师" src="images/liwei.jpg" alt="李伟"/>
+        </div>
+
+        <!-- 简介右盒子 -->
+        <div class="imgcss1" style="float: right;text-indent: 0; width: 350px; margin: 180px 5px 0;">    
+           姓&#12288;&#12288;名：李伟<br>
+           职&#12288;&#12288;称：教授<br>
+           电子邮箱：<a href="mailto:wl276@hust.edu.cn">wl276@hust.edu.cn</a><br>
+           办公地址：武汉国家光电实验室C区104<br>
+           &nbsp;
+        </div><div style="clear:both;"></div> 
+
+        <strong id="geren">&nbsp;个人简历</strong>
+        <div class="wenzi" style="text-align:justify; text-justify:inter-ideograph;">
+          李伟，男，1979年出生，中共党员，2003年于内蒙古师范大学化学系获得学士学位；2008年于中国科学院福建物质结构研究所获得物理化学博士学位；2008.08-2009.07于国家复合改性聚合物材料工程技术研究中心任助理研究员；2009.09-2015.01于英国剑桥大学从事博士后研究。2015年3月加入华中科技大学物理学院。
+        </div>
+
+         </article>
+
+    </div>  <!-- 正文部分结束 --> 
+</div>      <!-- wrapper结束 -->
+
+    <!-- footer嵌入代码 -->
+    <?php 
+        include "hide/footer.php"
+    ?>
+</body>
+</html>

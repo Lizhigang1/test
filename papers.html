@@ -1,0 +1,71 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/">
+  <head>
+    <meta http-equiv="Content-Language" content="zh-cn">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="李伟, 材料化学与物理, 华中科大学, 物理学院, 武汉光电国家实验室">
+    <meta name="description" content="李伟课题组网站, 武汉光电国家实验室材料与化学课题组，陆培祥超快光学团队">
+    <title> 论文 - MCP Group</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/papers.css" rel="stylesheet" type="text/css" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="images/mcplogo.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/mcplogo.ico" type="image/x-icon"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script> 
+    <script type="text/javascript" src="js/lightbox.js"></script>
+    <script type="text/javascript" src="js/baiduSDK.js"></script>          
+  </head>
+<body>
+  <!-- header嵌入代码 -->
+  <?php 
+      include "hide/header.php"
+  ?> 
+
+  <div id="wrapper"> <!-- 主体部分 -->
+
+    <!-- 左侧导航栏开始 --> 
+    <div id="sidebar">
+      <?php 
+        include "hide/navigation-bar-main.php"
+      ?> 
+    </div>
+    <!-- 导航栏结束 -->
+
+    <div class="location"> <!-- 顶部栏目 -->
+      <!-- 招生宣传 -->
+      <?php
+        include "hide/zhaosheng.php"
+      ?>
+      <span class="wz">
+        您现在的位置：<a href="/new/">首页</a> &nbsp;&gt;&nbsp;<a href="">论文</a> 
+      </span>
+      <span class="total">
+        <?php
+          include("php/counter.php");
+        ?>
+      </span>
+
+      <!-- 浏览记录代码 -->
+      <span class="jilu">
+         <script type="text/javascript" src="js/jilu.js" ></script>
+      </span>
+      <!-- 通知与更新时间嵌入代码 -->
+      <?php 
+          include "hide/notices.php"
+      ?>
+    </div> <!-- 顶部结束 -->
+
+    <!-- 正文部分开始 -->   
+    <div class="content">
+      <?php 
+          include "hide/lunwen.php"
+      ?>
+      
+    </div>    <!-- 正文部分结束 -->
+  </div>      <!-- wrapper结束 -->
+  <!-- footer嵌入代码 -->
+  <?php 
+      include "hide/footer.php";
+  ?>
+</body>
+</html>

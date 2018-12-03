@@ -1,0 +1,113 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="李伟, 材料化学与物理, 华中科大学, 物理学院, 武汉光电国家实验室">
+        <meta name="description" content="李伟课题组网站, 武汉光电国家实验室材料与化学课题组">
+        <title>团队成员 - MCP Group </title>
+        <link href="css/reset.css" rel="stylesheet" type="text/css" />
+        <link href="css/index.css" rel="stylesheet" type="text/css" />
+        <link href="css/members.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" href="images/mcplogo.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="images/mcplogo.ico" type="image/x-icon"/>
+        <script type="text/javascript" src="js/jquery.min.js"></script> 
+        <script type="text/javascript" src="js/lightbox.js"></script>   
+        <script type="text/javascript" src="js/sl.js"></script>
+        <script type="text/javascript" src="js/baiduSDK.js"></script>
+        <script>
+          $(document).ready(function(){
+              $.focus("#focus-1");
+          });
+        </script>
+    </head>
+<body>
+  <!-- header嵌入代码 -->
+  <?php 
+      $sidebar="users";
+      include "hide/header.php"
+  ?> 
+
+  <div id="wrapper"> <!-- 主体部分 -->
+    <!-- 左侧导航栏开始 -->
+    <div id="sidebar">
+      <?php 
+          $sidebar="users";
+          include "hide/navigation-bar-main.php"
+      ?> 
+    </div> <!-- 导航栏结束 -->
+    <div class="location"> <!-- 顶部栏目 -->
+      <!-- 招生宣传 -->
+      <?php
+          include "hide/zhaosheng.php"
+      ?>
+      <span class="wz">
+        您现在的位置：<a href="">首页</a> &nbsp;&gt;&nbsp;<a href="">成员简介</a> 
+      </span>
+      <span class="total">
+        <?php
+          include("php/counter.php");
+        ?>
+      </span>
+
+      <!-- 浏览记录代码 -->
+      <span class="jilu">
+         <script type="text/javascript" src="js/jilu.js" ></script>
+      </span>
+      <!-- 通知与更新时间嵌入代码 -->
+      <?php 
+          $sidebar="users";
+          include "hide/notices.php"
+      ?>
+    </div> <!-- 顶部结束 -->
+
+    <!-- 正文部分开始 --> 
+    <div class="content">
+
+      <div class="news-sy"> <!-- 图片展示开始 -->
+        <div class="focus" id="focus-1">
+          <ul>
+            <li><img src="images/members1.jpg" title="部分成员近期合影1" /><br/>  </li>
+            <li><img src="images/members2.jpg" title="部分成员近期合影2" /><br/>  </li>
+
+          </ul>
+        </div>
+      </div> <!-- 图片展示结束 -->
+
+    	<div class="title-1">
+    		点击进入详情：
+
+    	</div>
+
+
+      <div>在读博士生:</div>
+       <ul class="cylb">
+          <li> <a href="groups/wwj.php">魏文娟</a> </li>
+          <li> <a href="groups/gd.php">桂堤</a> </li>
+          <li> <a href="groups/dly.php">董利源</a> </li>
+          <li> <a href="groups/qy.php">秦炎</a> </li>
+          <li> <a href="groups/jlj.php">季丽君</a> </li>
+        </ul> <br />
+
+      <div>在读硕士生:</div>
+        <ul class="cylb">
+          <li> <a href="groups/zh.php">张红</a> </li>
+          <li> <a href="groups/zyn.php">张亚楠</a> </li>
+          <!-- <li> <a href="groups/hx">韩旭</a> </li> -->
+          <li> <a href="groups/rc.php">冉成</a> </li>
+        </ul> <br />
+
+     <div>毕业  学生:</div>
+        <ul class="cylb">
+          <li> <a href="groups/fgq.php">冯国强 博士</a> </li>
+        </ul> <br /><br /><br />
+
+    </div> <!-- 正文部分结束 --> 
+    </div> <!-- wrapper结束 -->
+    
+    <!-- footer嵌入代码 -->
+    <?php 
+        $sidebar="users";
+        include "hide/footer.php"
+    ?>
+</body>
+</html>

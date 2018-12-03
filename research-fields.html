@@ -1,0 +1,81 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/">
+  <head>
+    <meta http-equiv="Content-Language" content="zh-cn">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="李伟, 材料化学与物理, 华中科大学, 物理学院, 武汉光电国家实验室">
+    <meta name="description" content="李伟课题组网站, 武汉光电国家实验室材料与化学课题组，陆培祥超快光学团队">
+    <title> 研究领域 - MCP Group</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/research-fields.css" rel="stylesheet" type="text/css" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="images/mcplogo.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/mcplogo.ico" type="image/x-icon"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script> 
+    <script type="text/javascript" src="js/lightbox.js"></script>
+    <script type="text/javascript" src="js/baiduSDK.js"></script>          
+  </head>
+<body>
+  <!-- header嵌入代码 -->
+  <?php 
+      $sidebar="users";
+      include "hide/header.php"
+  ?> 
+
+  <div id="wrapper"> <!-- 主体部分 -->
+
+    <!-- 左侧导航栏开始 --> 
+    <div id="sidebar">
+      <?php 
+        $sidebar="users";
+        include "hide/navigation-bar-main.php"
+      ?> 
+    </div>
+    <!-- 导航栏结束 -->
+
+    <div class="location"> <!-- 顶部栏目 -->
+      <!-- 招生宣传 -->
+      <?php
+        include "hide/zhaosheng.php"
+      ?>
+      <span class="wz">
+        您现在的位置：<a href="/new/">首页</a> &nbsp;&gt;&nbsp;<a href="">研究领域</a> 
+      </span>
+      <span class="total">
+        <?php
+          include("php/counter.php");
+        ?>
+      </span>
+
+      <!-- 浏览记录代码 -->
+      <span class="jilu">
+         <script type="text/javascript" src="js/jilu.js" ></script>
+      </span>
+      <!-- 通知与更新时间嵌入代码 -->
+      <?php 
+          $sidebar="users";
+          include "hide/notices.php"
+      ?>
+    </div> <!-- 顶部结束 -->
+
+    <!-- 正文部分开始 -->   
+    <div class="content">
+      <strong id="yanju">&nbsp;研究领域及成果</strong>
+        <div class="wenzi" style="text-align:justify; text-justify:inter-ideograph;">
+              新型凝聚态材料金属-有机框架(Metal-organic framework，简称MOF)的合成、物理性质及其在能源与医药领域的应用。(1)MOF材料的微观力学性质及结构和性质之间的内在关系；(2)MOF材料在温度和压力微扰下的相变和机理以及对其功能性质的影响；(3)材料原位表征技术探索与仪器搭建。<br>
+        </div>
+        <div class="wenzi">
+             材料化学与物理课题组欢迎有物理、化学、材料以及工程等学科背景的同学加盟。
+        </div>
+
+      <br /><br /><br /><br /><br /><br /><br /><br /><br />
+      
+    </div>    <!-- 正文部分结束 -->
+  </div>      <!-- wrapper结束 -->
+  <!-- footer嵌入代码 -->
+  <?php 
+      $sidebar="users";
+      include "hide/footer.php";
+  ?>
+</body>
+</html>
